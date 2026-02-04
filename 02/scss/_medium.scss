@@ -1,0 +1,25 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: $gutter;
+        list-style: none;
+    } // end ul
+    ul li a {
+        margin: 10px 0;
+    }
+    ul li:hover a {
+        background:  $accentColor;
+        border-radius: 10px;
+        color: $greyColor;
+    } // end hover
+} // end nav
+
+main {
+    div.gridparent{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+        gap: $gutter;
+    }
+}

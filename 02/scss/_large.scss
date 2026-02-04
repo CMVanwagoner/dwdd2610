@@ -1,0 +1,18 @@
+header, nav, main {
+    max-width: 75rem;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav ul li a {
+    padding: .5rem $gutter;
+    font-size: .9rem;
+}
+
+main {
+    div.gridparent{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: $gutter;
+    }
+}

@@ -1,0 +1,36 @@
+header, nav {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav ul {
+    justify-content: flex-end;
+    li a{
+        padding: .4rem 1rem;
+    }
+}
+
+/* MAIN */
+main {
+    video {
+        width: 80%;
+        height: auto;
+    }
+
+    details {
+            summary {
+            background-color: $primaryColor;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+
+            width: 14vw;
+            height: fit-content;
+            padding: 13px 5px;
+            list-style-type: none;
+        }
+    }
+}
+/* FOOTER */
+

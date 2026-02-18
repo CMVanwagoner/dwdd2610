@@ -350,7 +350,7 @@ nav ul li {
   list-style-type: none;
 }
 nav ul li a {
-  color: nav ul li a primaryColor;
+  color: #1d295f;
   text-align: center;
   text-decoration: none;
   display: block;

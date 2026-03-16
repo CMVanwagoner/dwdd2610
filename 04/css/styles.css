@@ -316,7 +316,7 @@ html {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #52A3F4;
+  color: #000;
   font-weight: 300;
 }
 main p {
@@ -345,7 +345,7 @@ header span {
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 nav {
-  background-color: #e5780e;
+  background-color: #F29136;
 }
 
 #myButton::before {
@@ -399,7 +399,7 @@ body {
   padding: 0 10px;
 }
 .allcards section {
-  border: 1px solid #e5780e;
+  border: 1px solid #F29136;
   border-radius: 10px;
   overflow: hidden;
   margin: 1rem 0;
@@ -409,7 +409,7 @@ body {
   padding: 1rem 10px;
 }
 .allcards section h2 {
-  background-color: #e5780e;
+  background-color: #F29136;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -435,7 +435,7 @@ body {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #e5780e;
+  background-color: #F29136;
 }
 
 footer {
@@ -466,7 +466,7 @@ footer section.social a {
   border-radius: 10px;
 }
 footer section.social a:hover {
-  color: #e5780e;
+  color: #F29136;
   background-color: black;
   transition: 0.3s;
 }
@@ -508,7 +508,7 @@ footer p.legal {
   }
   ul.menuLinks li a {
     padding: 0.4rem 1rem;
-    color: #e5780e;
+    color: #F29136;
     font-size: 1.5rem;
   }
   ul.menuLinks, ul.menuLinks.open {
@@ -517,10 +517,10 @@ footer p.legal {
     background-color: white;
   }
   ul.menuLinks .active, ul.menuLinks.open .active {
-    border-bottom: 2px #e5780e solid;
+    border-bottom: 2px #F29136 solid;
   }
   ul.menuLinks a:hover {
-    border-bottom: 1px #e5780e solid;
+    border-bottom: 1px #F29136 solid;
     transition: 0.3s;
   }
   /*  MAIN STUFF GOES HERE */

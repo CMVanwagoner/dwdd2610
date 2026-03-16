@@ -508,7 +508,7 @@ footer p.legal {
   }
   ul.menuLinks li a {
     padding: 0.4rem 1rem;
-    color: #F29136;
+    color: black;
     font-size: 1.5rem;
   }
   ul.menuLinks, ul.menuLinks.open {

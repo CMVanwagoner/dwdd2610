@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cohen's Diner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/styles.min.css"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <img src="/images/favicon_io/favicon.ico" alt="logo" />
+        <span>Cohen's Diner</span>
+      </header>
+    </div>
+    <!-- end header wrapper -->
+
+    <div id="navWrapper">
+      <nav>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+          <li><a href="#">Our Kitchen</a></li>
+          <li class="active"><a href="#">Our Menu</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end nav wrapper -->
+
+    <div id="mainWrapper">
+      <main>
+        <h1>Our Menu</h1>
+        <p>We offer a broad selection of breakfast options, made fresh everyday.</p>
+        <div class="allcards">
+          <section>
+            <h2>Breakfast Burritos</h2>
+            <img src="images/burrito.webp" width="300" height="175" />
+            <p>
+              Our Breakfast Burritos are filled with delicious steak, eggs,
+              potatoes and tomatoes, served in a flour tortilla.
+            </p>
+            <a href="#">Order</a>
+          </section>
+          <section>
+            <h2>Fruit Salad</h2>
+            <img src="images/fruitsalad.webp" width="300" height="175" />
+            <p>
+              Our Fruit Salad is a refreshing mix of seasonal fruits including
+              strawberries, melon, grapes, and pineapple, served chilled for a
+              light and healthy start to your day.
+            </p>
+            <a href="#">Order</a>
+          </section>
+
+          <section>
+            <h2>Pancakes</h2>
+            <img src="images/pancake.webp" width="300" height="175" />
+            <p>
+              Our Pancakes are light and fluffy, served warm with butter and
+              maple syrup for a classic and comforting breakfast favorite.
+            </p>
+            <a href="#">Order</a>
+          </section>
+
+          <section>
+            <h2>Fried Eggs</h2>
+            <img src="images/breakfast.webp" width="300" height="175" />
+            <p>
+              Our Fried Eggs are cooked to perfection and served with a side of
+              crispy breakfast potatoes and toast, making for a simple yet
+              satisfying meal.
+            </p>
+            <a href="#">Order</a>
+          </section>
+
+          <section>
+            <h2>Waffles</h2>
+            <img src="images/waffles.webp" width="300" height="175" />
+            <p>
+              Our Waffles are golden and crisp on the outside, soft on the
+              inside, and served with butter and maple syrup for a sweet and
+              delicious breakfast treat.
+            </p>
+            <a href="#">Order</a>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- end main wrapper -->
+
+    <div id="footerWrapper">
+      <footer>
+        <div>
+            <section class="contact">
+                <p><ion-icon name="person-outline"></ion-icon>Cohen Van Wagoner</p>
+                <p><ion-icon name="home-outline"></ion-icon>Cohen's Diner, LLC</p>
+                <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:tim@cern.com">admin@cohensdiner.com</a></p>
+                <p><ion-icon name="globe-outline"></ion-icon><a href="https:// cern.com">cohensdiner.com</a></p>
+                <p><ion-icon name="call-outline"></ion-icon><a href="tel:41227678484">41 22 767 84 84</a></p>
+            </section>
+            <section class="social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </section>
+            <section class="location">
+                <address>Cohen's Diner <br> 6967 State Street <br> Athens, Greece</address>
+            </section>
+        </div>
+        <div>
+
+            <p class="legal">&copy; <span id="year">2026</span> &bull; Cohen Van Wagoner</p>
+        </div>
+      </footer>
+    </div>
+    <!-- end footer wrapper -->
+    <script src="js/scripts.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

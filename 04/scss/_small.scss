@@ -1,0 +1,176 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+        line-height: $leading;
+    }
+}// end main
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 50px auto;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+nav {
+    background-color: $primaryColor;
+}
+#myButton::before {
+    content: "\2630";
+}
+// style the button
+#myButton {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    font-weight: $lightWeight;
+    cursor: pointer;
+}
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    li a {
+        color: #fff;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+    }
+    li.active a {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+ul.open.menuLinks {
+    display: block;
+}
+#myButton.open::before {
+    content: "x";
+}
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+}
+.allcards {
+    padding: 0 $gutter;
+    section {
+        border: 1px solid $primaryColor;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+        h2, p, img{
+            margin: 0;
+            padding: 1rem $gutter;
+        }
+        h2{
+            background-color: $primaryColor;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+            padding: 0;
+        }
+        p{
+            font-style: italic;
+        }
+        a{
+            display: block;
+            background-color: $secondaryColor;
+            padding: .75rem;
+            text-align: center;
+            margin: 0 3rem 1rem 3rem;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+} //end allcards
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    padding: 0.5rem $gutter;
+    section {
+
+    }
+    section.contact{
+        p{font-size: 1.2rem; margin: .5rem;}
+        ion-icon{padding: 5px;}
+        a {
+            color: #222222;
+            text-decoration: none;
+        }
+    } // end of contact
+    section.social{
+        display: flex;
+        justify-content: center;
+        a {
+            display: block;
+            font-size: 3rem;
+            margin: .5rem;
+            padding: .5rem;
+            color: $secondaryColor;
+            line-height: 100%;
+            border-radius: 10px;
+            &:hover {
+                color: $primaryColor;
+                background-color: $secondaryColor;
+                transition: 0.3s;
+            }
+        }
+    } // end of social
+    section.location{
+        font-size: 1.5rem;
+        
+    } // end of location
+    p.legal {
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+    }
+}// end footer

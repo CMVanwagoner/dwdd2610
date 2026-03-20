@@ -1,0 +1,271 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 50px auto;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+#theButton::before {
+    content: "\2630";
+}
+
+#theButton.open::before {
+    content: "\2715";
+}
+
+
+#theButton {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#theNav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.2s ease-out;
+    ul {
+        overflow: hidden;
+    }
+}
+#theNav.open {
+    grid-template-rows: 1fr;
+}
+#theNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li a {
+        color: $primaryColor;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+} // end unordered
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #111;
+        line-height: $leading;
+    }
+}// end main
+
+.Hero{
+    position: relative;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    div, p {
+        margin: 0;
+    }
+    div{ 
+        position: absolute;
+        top: 0;        
+        width: 90%;
+        height: 100%;
+        background: RGBA(0, 0, 0, .5);
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        p{
+        color: white;
+        padding-bottom: 0.5rem;
+        font-size: clamp(1rem, 2vw + .5rem, 1.75rem); // minimum, preferred, maximum
+    } 
+    p.hero-text {
+        padding-bottom: 0;
+    }
+}//Text Overlay
+} // End Hero Styling
+h2 { display: block; text-align: center;}
+
+.card-holder{
+    margin: 0; padding: 0 $gutter;
+    section {
+        padding: 1rem 0;
+        border: 1px solid $primaryColor;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div.icon{
+            font-size: 3rem;
+            
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            color: $primaryColor;
+            position: relative;
+        }
+        h2, a{
+            text-align: center;
+        }
+        div.link {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap ;
+            justify-content: center;
+            width: 100%;
+            a {
+            background-color: $primaryColor;
+            padding: .75rem;
+            margin: 0 3rem 1rem 3rem;
+            border-radius: 8px;
+            color: black;
+            text-decoration: none;
+            max-width: 150px;
+            max-height: 42px;
+        }
+        }
+        p {
+            max-width: 500;
+        }
+        
+    }
+        .bounce:hover img {animation: myBounce 1s 1;}
+        .spin:hover img {animation: mySpin 1s 1;}
+        .pulse:hover img {animation: myPulse 1s 1;}
+        .color:hover img {animation: myColor 4s 3;}
+        .color img {
+            background-color: red;
+            border-radius: 25px;
+        }
+        //bounce stuff
+            @keyframes myBounce {
+                0% {bottom:0px; animation-timing-function:ease-out;}
+                25% {bottom:15px; animation-timing-function:ease-in;}
+                50% {bottom:0px; animation-timing-function:ease-out;}
+                75% {bottom:7px; animation-timing-function:ease-in;}
+                100% {bottom:0px; animation-timing-function:ease-out;}
+            }// end bounce
+        //spin stuff
+        @keyframes mySpin {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        } // end spin
+        @keyframes myPulse {
+            0% {transform: scale(1.0);}
+            25% {transform: scale(1.5);}
+            50% {transform: scale(.75);}
+            75% {transform: scale(1.25);}
+            100% {transform: scale(1.0);}
+        }
+        @keyframes myColor {
+            0% {background-color: red;}
+            15% {background-color: orange;}
+            30% {background-color: yellow;}
+            45% {background-color: green;}
+            60% {background-color: blue;}
+            75% {background-color: indigo;}
+            90% {background-color: violet;}
+            100% {background-color: red;}
+        }
+
+}
+
+// Review STUFF
+div.reviewWrapper {
+    background-color: white;
+    padding: 2rem 0;
+    text-align: center;
+    div#review {
+        section{
+            margin: 10px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                max-width: 250px;
+            }
+            div{
+                img {
+                width: 20px;
+            } //end img
+            
+            } //end div
+        } //end section
+    } // end #div#review
+} // # end reviewWrapper
+#cards {
+    text-align: center;
+    h3 {
+        margin: 2rem $gutter 0 $gutter;
+        text-align: center;
+        color: #000;
+        //font-weight: $boldWeight;
+    }
+
+} // end #cards
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: black;
+    text-align: center;
+    line-height: $leading;
+    a {color: $secondaryColor;}
+}// end footer

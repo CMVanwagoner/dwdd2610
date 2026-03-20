@@ -12,7 +12,8 @@
         border: none;
     }
     a:hover {
-        text-decoration: underline;
+            border-bottom: 1px solid $primaryColor;
+    
     }
 } //end ul
 

@@ -96,6 +96,7 @@ body {
         border-radius: 10px;
         overflow: hidden;
         margin: 1rem 0;
+
         h2, p, img{
             margin: 0;
             padding: 1rem $gutter;
@@ -125,8 +126,8 @@ body {
             text-decoration: none;
         }
     }
-} //end allcards
 
+} //end allcards
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
     background-color: $primaryColor

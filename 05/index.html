@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Navigation Example</title>
+	<title>Automoco Dealers</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
 
@@ -17,20 +17,21 @@
 <body>
 <div id="headerWrapper">
 	<header>
-        <img src="images/logo1x.png" alt="logo">
-		<span>Design Thinking</span>
+        <img src="images/favicon_io/favicon.ico" alt="logo">
+		<span>Automoco Dealers</span>
 	</header>
 </div><!-- end header wrapper -->
 
     
     
 <div id="navWrapper">
-    <nav>
+    <nav id="theNav">
+        <button id="theButton"></button>
         <ul>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Services</a></li>
-            <li class="active"><a href="#">Best Practices</a></li>
-            <li><a href="#">Our Team</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Current Models</a></li>
+            <li><a href="#">Sell Your Car</a></li>
+            <li><a href="#">Service</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
@@ -38,27 +39,69 @@
 
 <div id="mainWrapper">
     <main>
-
-        <h1>Best Practices</h1>
-   
-        <p>Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core competencies. Distinctively coordinate team driven portals rather than synergistic processes.</p>
-
-        <p>Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic" sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff expertise. Authoritatively exploit transparent users through virtual channels.</p>
-
-        <p>Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize high-quality methodologies for performance based bandwidth.</p>
-
-     
+        <div class="Hero">
+            <picture class="img">
+                <img src="images/herolarge.webp" alt="car dealership" width="3" height="2">
+            </picture>
+            <div><p class="hero-text">Welcome to Automoco</p><p>Let's get started</p></div>
+        </div>
+        <h2>Our Services</h2>
+        <div class="card-holder">
+          <section class="bounce">
+            <img src="images/svg/certificate.svg" alt="certification">
+            <h2>Evaluation</h2>
+            <p>Our car experts will evaluate your vehicle to ensure you get the best, blue book matched price avaliable to you and your vehicle. 
+            </p>
+            <div class="link">
+                <a href="#">Learn More</a>
+            </div>
+          </section>
+          <section class="spin">
+            <img src="images/svg/wrench.svg" alt="wrench">
+            <h2>Maintanance</h2>
+            <p>Our mechanics will work to get your car back to its prime! We offer extensive services from paint touch ups and engine tune ups to keep your car running smooth for years.
+            </p>
+            <div class="link">
+                <a href="#">Learn More</a>
+            </div>
+          </section>
+          <section class="pulse">
+            <img src="images/svg/list.svg" alt="listings">
+            <h2>Listings</h2>
+            <p>View our current listings of high quality vehicles avaliable for same-day purchase! See what you need to do to own your next vehicle!
+            </p>
+            <div class="link">
+                <a href="#">Learn More</a>
+            </div>
+          </section>
+          <section class="color">
+            <img src="images/svg/tag.svg" alt="tag">
+            <h2>Selling</h2>
+            <p>List your car on our listing services, so that your used car can make it to its next owner sooner! Fill out these steps to get your car ready to be sold!</p>
+            <div class="link">
+                <a href="#">Learn More</a>
+            </div>
+          </section>
+          
+        </div>
+        <div class="reviewWrapper">
+            <h2>What our Customers Say</h2>
+            <div id="review"></div>
+        </div>
 
     </main>
 </div><!-- end main wrapper -->
     
 <div id="footerWrapper">
     <footer>
-        <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved. 
+        <p>Copyright &copy; 2025 Automoco Dealers | All rights reserved. 
             <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
     </footer>
-    <script src="scripts.js" type="module"></script>
 </div> <!-- end footer wrapper -->
-   
+
+<script type="module" src="js/scripts.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html> 

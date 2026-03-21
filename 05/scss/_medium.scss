@@ -1,1 +1,81 @@
 /* NAVIGATION STUFF GOES HERE  */
+#theButton {
+    display: none;
+}
+#theNav {
+    grid-template-rows: 1fr;
+}
+#theNav ul, #theNav ul.open {
+    display: flex;
+    li a {
+        padding: .4rem 1rem;
+        border: none;
+    }
+    a:hover {
+            border-bottom: 1px solid $primaryColor;
+    
+    }
+} //end ul
+
+#navWrapper {
+    border-bottom: 1px solid $greyColor;
+}
+
+/* MAIN WRAPPER */
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gutter;
+    section{
+        flex-basis: calc(50% - ($gutter/2));
+        p {
+            text-align: left;
+        }
+        div.link {
+            align-items: end;
+            justify-content: center;
+            a {
+                margin: 0;
+            }
+    }
+    }
+}
+.Hero{
+    div{
+        padding-left: 2rem;
+        background: RGBA(0, 0, 0, .5);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
+        p{
+        padding-bottom: 2rem;
+        font-size: clamp(1rem, 2vw + .5rem, 3rem); // minimum, preferred, maximum
+    } 
+    p.hero-text {
+        padding-bottom: 0;
+    }
+}}
+// Review STUFF
+div.reviewWrapper {
+    background-color: white;
+    text-align: center;
+    div#review {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: center;
+        gap: $gutter;
+        section{
+            flex-basis: calc(50% - ($gutter/2));
+            margin: 0;
+        } //end section
+    } // end #div#review
+} // # end reviewWrapper
+#cards {
+    text-align: center;
+    h3 {
+        margin: 2rem $gutter 0 $gutter;
+        text-align: center;
+        color: #000;
+        //font-weight: $boldWeight;
+    }
+
+} // end #cards

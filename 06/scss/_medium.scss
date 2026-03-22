@@ -1,1 +1,29 @@
 /* NAVIGATION STUFF GOES HERE  */
+
+header { grid-template-columns: 50px auto auto;}
+
+#primaryNav button {
+    display: none;
+}
+
+#primaryNav ul, #primaryNav ul.open {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    position: static;
+    border: none;
+    box-shadow: none;
+    li a {
+        padding: .4rem 1rem;
+    }
+    a:hover {
+        text-decoration: underline4px $accentColor;
+    }
+}
+
+// Create the For Loop
+
+@for $i from 1 through 12 {
+    $w: calc($i /12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+}

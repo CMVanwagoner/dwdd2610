@@ -69,8 +69,8 @@ li.active a {
     border: red solid 1px;
 }
 .column {
-    padding: 0 8px;
-    margin: 8px;
+    padding: 8px;
+    margin: 0;
     border: blue dashed 1px;
 }
 // Create the For Loop
@@ -87,6 +87,11 @@ body {
     min-width: 320px;
 }
 
+main img {
+    width: 100%;
+    height: auto;
+
+}
 
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {border-bottom: 1px solid $greyColor;}

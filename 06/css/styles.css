@@ -372,8 +372,8 @@ li.active a {
 }
 
 .column {
-  padding: 0 8px;
-  margin: 8px;
+  padding: 8px;
+  margin: 0;
   border: blue dashed 1px;
 }
 
@@ -430,6 +430,11 @@ body {
   font-family: "Spline Sans", sans-serif;
   font-weight: 300;
   min-width: 320px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
 }
 
 /* --------------------------- HEADER --------------------------- */
@@ -540,10 +545,6 @@ footer a {
   }
 }
 @media only screen and (min-width: 64rem) {
-  header, nav, main {
-    max-width: 960px;
-    margin: auto;
-  }
   /* NAVIGATION STUFF GOES HERE  */
   .large-1 {
     flex-basis: 8.3333333333%;

@@ -341,6 +341,12 @@ html {
   width: 44px;
 }
 
+div.row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 li a {
   color: #1d295f;
   display: block;
@@ -365,16 +371,58 @@ li.active a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 1rem 0;
   padding: 0 8px;
-  border: red solid 1px;
 }
 
 .column {
   padding: 8px;
   margin: 0;
-  border: blue dashed 1px;
+}
+
+main div div {
+  position: relative;
+}
+
+main section {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  flex-grow: 1;
+}
+
+main a {
+  margin: 0 auto;
+  background-color: #363636;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  max-height: 55px;
+}
+
+main a:hover {
+  transform: scale(110%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center, .shadow, .line {
+  margin: 8px;
+}
+
+.line {
+  border: 1px #bbb solid;
+}
+
+.shadow {
+  box-shadow: 0 0 10px #aaa;
 }
 
 .small-1 {
@@ -545,6 +593,10 @@ footer a {
   }
 }
 @media only screen and (min-width: 64rem) {
+  header, nav, main {
+    max-width: 960px;
+    margin: auto;
+  }
   /* NAVIGATION STUFF GOES HERE  */
   .large-1 {
     flex-basis: 8.3333333333%;

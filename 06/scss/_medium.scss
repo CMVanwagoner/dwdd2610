@@ -20,7 +20,6 @@ header { grid-template-columns: 50px auto auto;}
         text-decoration: underline4px $accentColor;
     }
 }
-
 // Create the For Loop
 
 @for $i from 1 through 12 {

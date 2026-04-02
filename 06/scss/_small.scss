@@ -12,6 +12,11 @@ html {
 } // end all elements
 
 // --------------------------- NAV ---------------------------- */
+
+#primaryNav {
+    position: relative;
+}
+
 #primaryNav ul {
     position: absolute;
     right: $gutter;
@@ -62,6 +67,9 @@ li.active a {
 }
 #primaryNav button.open::before {
     content: "\2715";
+}
+ul.open {
+
 }
 
 #primaryNav ul.open {

@@ -60,17 +60,13 @@ li a {
     padding: .75rem $gutter;
     text-decoration: none;
 }
-li.active a {
-    background-color: $secondaryColor;
-    color: white;
-    font-weight: $normalWeight;
+li.active {
+    background-color: green;
 }
 #primaryNav button.open::before {
     content: "\2715";
 }
-ul.open {
 
-}
 
 #primaryNav ul.open {
     display: block;
@@ -169,19 +165,6 @@ header {
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------- MAIN --------------------------- */
 main {
     h1 {
@@ -196,8 +179,6 @@ main {
         line-height: $leading;
     }
 }// end main
-
-
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {

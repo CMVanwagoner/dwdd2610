@@ -357,10 +357,8 @@ li a {
   text-decoration: none;
 }
 
-li.active a {
-  background-color: #7c1d47;
-  color: white;
-  font-weight: 500;
+li.active {
+  background-color: green;
 }
 
 #primaryNav button.open::before {
@@ -639,7 +637,10 @@ footer a {
   .large-12 {
     flex-basis: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */n: underline;
+}/*# sourceMappingURL=styles.css.map */ght: 150%;
+}
+footer a {
+  text-decoration: underline;
   color: black;
 }
 

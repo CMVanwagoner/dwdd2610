@@ -355,9 +355,7 @@ li a {
 }
 
 li.active a {
-  background-color: #7c1d47;
-  color: white;
-  font-weight: 500;
+  border-bottom: 2px solid#7c1d47;
 }
 
 #primaryNav button.open::before {

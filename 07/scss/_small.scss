@@ -1,0 +1,163 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+    display: grid;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+div#navWrapper {
+    grid-row-start: 4;
+}
+
+#top a, #navlinks > a {
+    display: block;
+    text-align: right;
+    font-size: 1.6rem;
+    height: 44px;
+    text-decoration: none;
+    color: #333;
+}
+
+#top a {
+    font-size: 2rem;
+}
+
+#navlinks > a {
+    padding: 15px 13px 0 0;
+}
+nav {
+    height: 100vh;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li a {
+        display: block;
+        color: $primaryColor;
+        padding: 14px 13px;
+        text-decoration: none;
+        text-align: right;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+} // end nav
+
+form.myForm {
+    margin: 1rem $gutter;
+
+    label {
+        display: block;
+        font-size: .8rem;
+        color: $secondaryColor;
+        padding-top: .2rem;
+        margin: .5rem 0;
+    }
+    h3 {
+        font-size: .9rem;
+        color: $primaryColor;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #eee;
+    }
+    input[type="text"], 
+    input[type="tel"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        border: 1px solid #999;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: $primaryColor;
+        width: 250px;
+        padding: .5rem $gutter;
+
+    }
+
+    input:required {color: $secondaryColor;}
+    input:focus{border: 2px solid $accentColor;}
+    input:required:valid {color: $primaryColor;}
+    
+    .nr {color: $primaryColor;}
+
+    input[type="submit"] {
+        border: none;
+        background-color: $primaryColor;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+    }   
+} // end form
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+        line-height: $leading;
+    }
+}// end main
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $greyColor;
+    text-align: center;
+    line-height: $leading;
+    a {color: $greyColor;}
+}// end footer

@@ -1,0 +1,21 @@
+/* NAVIGATION STUFF GOES HERE  */
+body {
+    display: block;
+}
+#top a, #navlinks > a {
+    display: none;
+}
+nav {
+    height: auto;
+    border-bottom: 2px solid $greyColor;
+    ul {
+        display: flex;
+    }
+    li a  {
+        border: none;
+        padding: 14px 13px;
+    }
+    li a:hover {
+        background-color: #eee;
+    }
+}

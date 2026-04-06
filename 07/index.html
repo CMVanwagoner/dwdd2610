@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Enroll Today</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest">
+    
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header id="top">
+            <img src="images/favicon_io/favicon-32x32.png" alt="logo">
+            <span>Sigma University</span>
+            <a href="#navlinks">&#9776;</a>
+        </header>
+    </div><!-- end header wrapper -->
+
+
+
+    <div id="navWrapper">
+        <nav id="navlinks">
+            <a href="#top">&#10005</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Programs</a></li>
+                <li class="active"><a href="#">Apply</a></li>
+                <li><a href="#">Why Sigma?</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div> <!-- end nav wrapper -->
+
+    <div id="mainWrapper">
+        <main>
+
+            <h1>Apply Today</h1>
+
+            <p>Here at Sigma University, we will do everything that we can to help you achieve your education. Your path
+                to excellence starts today. Enroll for free by filling out this form, and our advisors will contact you
+                shortly.</p>
+
+            <form method="GET" action="thanks.html" class="myForm" autocomplete="on">
+
+                <!-- Contact Info -->
+
+                <h3>Personal Info</h3>
+                <label>First Name: <input type="text" name="fname" autocomplete="given-name" required
+                        title="First Name Here"></label>
+                <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required
+                        title="Last Name Here"></label>
+                <label>Phone Number: <input type="text" name="phone" autocomplete="tel" required
+                        title="Phone Number Here"></label>
+                <label>Email Address: <input type="email" name="email" autocomplete="email" required
+                        title="Email Address Here"></label>
+                <label>Address: <input type="text" name="address" autocomplete="" required
+                        title="Primary Address Here"></label>
+                <label class="nr">City: <input type="text" name="city" autocomplete="address-level2" 
+                        title="City Name Here"></label>
+                <label class="nr">State: <input type="text" name="state" autocomplete="address-level1" 
+                        title="State Here"></label>
+                <label class="nr">Zip Code: <input type="text" name="zip" autocomplete="postal-code" 
+                        title="Zip Code Here"></label>
+
+                <!-- Communication Preferences -->
+
+                <h3>Communication Methods</h3>
+                <label class="nr"><input type="radio" name="Phone"> Phone </label>
+                <label class="nr"><input type="radio" name="Email"> Email </label>
+
+                <!-- Schooling-->
+
+                <label class="nr">School Type:
+                    <select>
+                        <option value="No Selection Made">Please Select</option>
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="Graduate">Graduate</option>
+                    </select>
+                </label>
+
+                <!-- High School Date-->
+
+                <label>High School Graduation Date: <input type="date" name="date" required></label>
+
+                <!--Education Completed-->
+
+                <h3>Education Completed</h3>
+                <label class="nr"><input type="checkbox" name="ged"> GED </label>
+                <label class="nr"><input type="checkbox" name="Highschool"> Highschool </label>
+                <label class="nr"><input type="checkbox" name="Associates"> Associates </label>
+
+                <!-- Account Information -->
+
+                <h3>Account Information</h3>
+                <label>Username - 5-10 characters<input type="text" name="username" required pattern="[A-Za-z0-9!@#$%^&*]{5,10}"
+                        title="Create a new Username - 5-10 characters"></label>
+                <label>New Password - At least 6 characters<input type="password" name="password" required pattern="[A-Za-z0-9!@#$%^&*]{6,}"
+                        title="Create a new Password - At least 6 characters"></label>
+                <label>Confirm Password<input type="password" name="confirmPassword" required pattern="[A-Za-z0-9!@#$%^&*]{6,}"
+                        title="Confirm your new Password"></label>
+
+                <!-- APPLY BUTTON -->
+                <input type="submit" value="Create Account">
+
+            </form>
+
+
+
+        </main>
+    </div><!-- end main wrapper -->
+
+    <div id="footerWrapper">
+        <footer>
+            <p>Copyright &copy; 2026 Sigma University. All rights reserved.</p>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a>
+            </p>
+        </footer>
+    </div> <!-- end footer wrapper -->
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
+#hamburgerBtn {
+    position: relative;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    .top, .bottom {
+        position: absolute;
+        height: 2px;
+        width: 50%;
+        left: 25%;
+        background-color: #777;
+        transition: all .3s ease;
+    }
+    .top {
+        top: 33%;
+    }
+    .bottom {
+        top: 62%;
+    }
+}
+
+#hamburgerBtn.open {
+    .top, .bottom {
+        top: 48%;
+        width: 60%;
+        left: 20%;
+    }
+    .top {
+        transform: rotate(45deg);
+    }
+    .bottom {
+        transform: rotate(-45deg);
+    }
+} //end open
+
+nav ul {
+    background-color: $primaryColor;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    li a {
+        color: white;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $primaryColor;
+        background-color: white;
+    }
+}
+nav ul.open {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- MAIN --------------------------- */
+.body-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 3rem;
+    > h2 {
+        display: block;
+        text-align: center;
+        color: $primaryColor;
+    }
+}
+
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+        line-height: $leading;
+    }
+
+}// end main
+
+// Hero Stuff
+.hero {
+    position: relative;
+    video {
+        width: 100%;
+        height: auto;
+    }  
+    div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        background-color: rgba(0,0,0,0.5);
+        padding: 10px;
+    }
+    div > p, h1 {
+        color:white;
+        padding-top: 0.5rem;
+    }
+    div > h1 {
+        font-size: 1.8rem;
+    }
+
+
+} // End Hero
+
+// Flip Card Stuff
+.card-holder {
+    padding: 20px 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: $primaryColor;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3, p {
+    color: white;
+    margin: 0;
+    padding: 0.5rem;
+    display: block;
+  }
+}
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $greyColor;
+    text-align: center;
+    line-height: $leading;
+    a {color: $greyColor;}
+}// end footer

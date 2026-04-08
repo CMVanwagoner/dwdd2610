@@ -1,0 +1,17 @@
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {display: none;}
+#primaryNav {display: flex;}
+nav {
+    ul li a {
+        border: none;
+        font-size: .85rem;
+        font-weight: $normalWeight;
+        padding: .5rem 1.2rem;
+        /* Transition */
+        transition: background 0.3s linear;
+    }
+    ul li a:hover {
+        background-color: white;
+        color: $primaryColor;
+    }
+}

@@ -1,0 +1,12 @@
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+}
+div.customer {
+    section {
+        grid-template-columns: 200px auto;
+        column-gap: 8px;
+    }
+} // end customer
+
+/* NAVIGATION STUFF GOES HERE  */

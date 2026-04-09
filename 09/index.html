@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Navigation Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo1x.png" alt="logo">
+            <span>Design Thinking</span>
+            <button id="theButton"></button>
+        </header>
+    </div><!-- end header wrapper -->
+
+
+
+    <div id="navWrapper">
+        <nav>
+            <ul id="theNav">
+                <li><a href="#">Clients</a></li>
+                <li class="sub-menu-parent"><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Brand Identity</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Design System</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">Best Practices</a></li>
+                <li class="sub-menu-parent"><a href="#">Our Team</a>
+                    <ul>
+                        <li><a href="#">Biff</a></li>
+                        <li><a href="#">Bart</a></li>
+                        <li><a href="#">Bill</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div> <!-- end nav wrapper -->
+
+    <div id="mainWrapper">
+        <main>
+
+            <h1>Best Practices</h1>
+
+            <!-- Slider main container -->
+            <div class="hero">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="images/beachside-small.jpg" media="(max-width: 746px)">
+                                <source srcset="images/beachside-medium.jpg" media="(max-width: 1172px)">
+                                <img src="images/beachside-large.jpg" alt="Beachside" width="16" height="9">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="images/business-small.jpg" media="(max-width: 746px)">
+                                <source srcset="images/business-medium.jpg" media="(max-width: 1172px)">
+                                <img src="images/business-large.jpg" alt="Business" width="16" height="9">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="images/citypark-small.jpg" media="(max-width: 746px)">
+                                <source srcset="images/citypark-medium.jpg" media="(max-width: 1172px)">
+                                <img src="images/citypark-large.jpg" alt="City Park" width="16" height="9">
+                            </picture>
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="overlay">
+                    <p>Kamas - Utah</p>
+                </div>
+            </div>
+            <div class="customer">
+                <section>
+                    <img src="images/customer1.jpg" alt="customer" height="200" width="200">
+                    <p> I loved the service, everyone was so very helpful!</p>
+                </section>
+                <section>
+                    <img src="images/customer2.jpg" alt="customer" height="200" width="200">
+                    <p> I loved the service, everyone was so very helpful!</p>
+                </section>
+                <section>
+                    <img src="images/customer3.jpg" alt="customer" height="200" width="200">
+                    <p> I loved the service, everyone was so very helpful!</p>
+                </section>
+            </div>
+
+
+        </main>
+    </div><!-- end main wrapper -->
+
+    <div id="footerWrapper">
+        <footer>
+            <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved.
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a>
+            </p>
+        </footer>
+    </div> <!-- end footer wrapper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

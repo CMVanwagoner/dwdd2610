@@ -1,5 +1,5 @@
 header, nav, main {
-    max-width: 960px;
+    max-width: 1400px;
     margin: auto;
 }
 div.customer {
@@ -8,5 +8,10 @@ div.customer {
         column-gap: 8px;
     }
 } // end customer
+div.service-card-holder{
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem .5rem;
+}
 
 /* NAVIGATION STUFF GOES HERE  */

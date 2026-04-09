@@ -1,122 +1,209 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Navigation Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/styles.min.css"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <title>FrontX</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon_io/site.webmanifest">
-
-</head>
-
-<body>
+  <body>
     <div id="headerWrapper">
-        <header>
-            <img src="images/favicon_io/favicon.ico" alt="logo">
-            <span>FrontX</span>
-            <div id="hamburgerBtn">
-                <span class="top"></span>
-                <span class="bottom"></span>
-            </div>
-        </header>
-    </div><!-- end header wrapper -->
-
-
+      <header>
+        <img src="images/logo1x.png" alt="logo" />
+        <span>Design Thinking</span>
+        <button id="theButton"></button>
+      </header>
+    </div>
+    <!-- end header wrapper -->
 
     <div id="navWrapper">
-        <nav>
-            <ul id="primaryNav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Tickets</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Contact</a></li>
+      <nav>
+        <ul id="theNav">
+          <li><a href="#">Clients</a></li>
+          <li class="sub-menu-parent">
+            <a href="#">Services</a>
+            <ul>
+              <li><a href="#">Brand Identity</a></li>
+              <li><a href="#">Style Guide</a></li>
+              <li><a href="#">Design System</a></li>
             </ul>
-        </nav>
-    </div> <!-- end nav wrapper -->
+          </li>
+          <li class="active"><a href="#">Best Practices</a></li>
+          <li class="sub-menu-parent">
+            <a href="#">Our Team</a>
+            <ul>
+              <li><a href="#">Biff</a></li>
+              <li><a href="#">Bart</a></li>
+              <li><a href="#">Bill</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end nav wrapper -->
 
     <div id="mainWrapper">
-        <main>
+      <main>
+        <h1>Best Practices</h1>
 
-            <div class="hero">
-                <video autoplay muted playsinline loop width="800" height="300">
-                    <source src="media/hero-video-hb.mp4" type="video/mp4" />
-                    <source src="media/hero-video-hb.webm" type="video/webm" />
-                </video> <!-- end hero video -->
-                <div>
-                    <h1>FrontX - 2026</h1>
-                    <p>Kamas - Utah</p>
-                </div>
-            </div>
+        <div class="hero">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
 
-    <!-- Text Spacer -->
-            <div class="body-text">
-                <h2>Welcome to FrontX</h2>
-                <p>FrontX is a premier conference for front-end developers, designers, and UX professionals. Join us for two days of inspiring talks, hands-on workshops, and networking opportunities with industry leaders. Whether you're looking to learn about the latest trends in web development or connect with like-minded professionals, FrontX has something for everyone.</p>
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="images/beachside-small.jpg"
+                    media="(max-width: 746px)"
+                  />
+                  <source
+                    srcset="images/beachside-medium.jpg"
+                    media="(max-width: 1172px)"
+                  />
+                  <img
+                    src="images/beachside-large.jpg"
+                    alt="Beachside"
+                    width="16"
+                    height="9"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="images/business-small.jpg"
+                    media="(max-width: 746px)"
+                  />
+                  <source
+                    srcset="images/business-medium.jpg"
+                    media="(max-width: 1172px)"
+                  />
+                  <img
+                    src="images/business-large.jpg"
+                    alt="Business"
+                    width="16"
+                    height="9"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="images/citypark-small.jpg"
+                    media="(max-width: 746px)"
+                  />
+                  <source
+                    srcset="images/citypark-medium.jpg"
+                    media="(max-width: 1172px)"
+                  />
+                  <img
+                    src="images/citypark-large.jpg"
+                    alt="City Park"
+                    width="16"
+                    height="9"
+                  />
+                </picture>
+              </div>
             </div>
-    <!-- Card Holder -->
-            <div class="card-holder">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/pfp1.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Jane Doe</h3>
-                            <p>UX/UI Designer</p>
-                            <p>Jane Doe is a UX/UI Designer focused on creating intuitive, visually engaging digital experiences. She specializes in turning complex ideas into clean, user-friendly interfaces, balancing strong aesthetics with usability.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/pfp2.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Emilee Fisher</h3>
-                            <p>Front-end Developer</p>
-                            <p>Emilee Fisher is a Front-End Developer who brings designs to life with clean, responsive code. She focuses on performance, accessibility, and building smooth, scalable user experiences across devices.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/pfp3.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Carly Johnson</h3>
-                            <p>User Researcher</p>
-                            <p>Carly Johnson is a User Researcher who uses data and user insights to guide design decisions. She conducts research and testing to ensure products are built around real user needs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="overlay">
+            <p>Kamas - Utah</p>
+          </div>
+        </div>
+
+        <!-- Services Cards-->
+        <div class="service-card-holder">
+          <div class="service-card">
+            <h2>Service 1</h2>
+            <img src="#" alt="#" class="overlay-image" />
+            <img src="#" alt="#" />
+          </div>
+          <div class="service-card">
+            <h2>Service 1</h2>
+            <img src="#" alt="#" class="overlay-image" />
+            <img src="#" alt="#" />
+          </div>
+          <div class="service-card">
+            <h2>Service 1</h2>
+            <img src="#" alt="#" class="overlay-image" />
+            <img src="#" alt="#" />
+          </div>
+          <div class="service-card">
+            <h2>Service 1</h2>
+            <img src="#" alt="#" class="overlay-image" />
+            <img src="#" alt="#" />
+          </div>
+        </div>
+        <div class="customer">
+          <section>
+            <img
+              src="images/customer1.jpg"
+              alt="customer"
+              height="200"
+              width="200"
+            />
+            <p>I loved the service, everyone was so very helpful!</p>
+          </section>
+          <section>
+            <img
+              src="images/customer2.jpg"
+              alt="customer"
+              height="200"
+              width="200"
+            />
+            <p>I loved Chicken service, everyone was so very helpful!</p>
+          </section>
+          <section>
+            <img
+              src="images/customer3.jpg"
+              alt="customer"
+              height="200"
+              width="200"
+            />
+            <p>I loved the service, everyone was so very helpful!</p>
+          </section>
+        </div>
+      </main>
     </div>
-    </div>
-
-
-    </main>
-    </div><!-- end main wrapper -->
+    <!-- end main wrapper -->
 
     <div id="footerWrapper">
-        <footer>
-            <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved.
-                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a>
-            </p>
-        </footer>
-    </div> <!-- end footer wrapper -->
-    <script src="js/scripts.js"></script>
-</body>
+      <footer>
+        <p>
+          Copyright &copy; 2025 Design Thinking Inc. All rights reserved.
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> |
+          <a href="#">Clients</a>
+        </p>
+      </footer>
+    </div>
+    <!-- end footer wrapper -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

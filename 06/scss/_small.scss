@@ -61,7 +61,7 @@ li a {
     text-decoration: none;
 }
 li.active {
-    background-color: green;
+    background-color: $secondaryColor;
 }
 #primaryNav button.open::before {
     content: "\2715";

@@ -2,6 +2,9 @@ header, nav, main {
     max-width: 960px;
     margin: auto;
 }
+
+/* NAVIGATION STUFF GOES HERE  */
+
 #hamburgerBtn {
     display:none;
 }
@@ -26,4 +29,9 @@ nav {
     background-color: #f7f7f7;
 }
 
-/* NAVIGATION STUFF GOES HERE  */
+main {
+    #cards {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+}

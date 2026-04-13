@@ -35,6 +35,8 @@ header {
     }
 } // end header
 
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
 #hamburgerBtn {
     width: 44px;
     height: 44px;
@@ -72,7 +74,7 @@ nav {
         background-color: rgba(0,0,0,0.1);
     }
     li.active a {
-        color: $secondaryColor;
+        color: $accentColor;
     }
 }
 .moveOver #hamburgerBtn::before {
@@ -86,22 +88,9 @@ nav {
     position: relative;
     overflow-x: hidden;
 }
-/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* --------------------------- MAIN --------------------------- */
+
 main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
@@ -114,6 +103,63 @@ main {
         color: #333;
         line-height: $leading;
     }
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $gutter;
+        padding: 1rem;
+        section {
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            overflow: hidden;
+            display: grid;
+            grid-template-areas:
+                "name"
+                "photo"
+                "address"
+                "phone";
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            img, picture {
+                grid-area: photo;
+                width: 100%;
+                height: auto;
+
+            picture {
+                width: 100%;
+                height: auto;
+            }
+            }// end img, picture
+            h3, a, p {
+                margin: 0;
+                padding: 0.5rem;
+            }
+            h3 {
+                grid-area: name;
+                text-align: center;
+                background-color: $secondaryColor;
+                color: $primaryColor;
+
+            }
+            p {
+                grid-area: address;
+                font-size: 1rem;
+
+            }
+            a {
+                grid-area: phone;
+                text-align: center;
+                color: $primaryColor;
+                text-decoration: none;
+                background-color: #FA8072;
+                color: #161616;
+                margin: 0 3.5rem .5rem 3.5rem;
+                border-radius: 8px;
+                font-size: .8rem;
+                padding: .25rem;
+            }
+        }
+    } //end cards
 }// end main
 
 

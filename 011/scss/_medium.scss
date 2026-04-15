@@ -1,0 +1,104 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav{
+    ul{
+        a {
+            img {display: none;}
+            span {display: block;}
+        }
+    }
+}
+main {
+  section {
+    padding-top: 54px;
+    height: fit-content;
+    min-height: 100vh;
+    border-bottom: solid 1px #333;
+    display: flex;
+    justify-content: center;
+  }
+#one {
+    background-color: $color1;
+    align-items: center;
+  } // end one
+#two {
+    background-color: $color2;
+    div.content-holder {
+    h3 {
+        background-color: darken($color2, 8%);
+    }
+  }
+}
+#three {
+    background-color: $color3;
+    div.content-holder {
+        h3 {
+            background-color: darken($color3, 10%);
+        }
+    }   
+  }
+#four {
+    background-color: $color4;
+    div.content-holder {
+        div.card-default {
+        align-items: center;
+    }
+}//end 4
+
+#five {
+        background-color: $color5;
+    div.content-holder{
+        div {
+            div {
+            background-color: darken($color5, 10%);
+            margin: .25rem;
+            border-radius: 16px;
+            width: fit-content;
+            height: fit-content;
+            p {
+                padding: .25rem .5rem;   
+                margin: 0;
+                text-align: center;
+                }
+            }// end tags
+        }// tag holder
+    }// end content-holder
+  }
+#six {
+    background-color: $color6;
+    .content-holder {
+        .social-links {
+        width: 50%;
+            img {
+            width: 100%;
+            flex-basis: 50%;
+            }
+        } 
+
+    }
+}}
+
+.content-holder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+}
+.card-default {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+    h3 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: .5rem 1rem;
+    }
+    p {
+        padding: 0 1rem;
+    }
+}}// end MAIN

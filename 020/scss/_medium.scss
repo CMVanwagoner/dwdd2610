@@ -1,1 +1,54 @@
 /* NAVIGATION STUFF GOES HERE  */
+main {
+    .hero {
+        > div {
+            left: 0px;
+            width: 14%;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .card-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+        section {
+            width: calc((100% - 16px)/2);
+        }
+    }
+    .clients {
+        div {
+            img {
+                //padding: 16px;
+                width: calc(25% - 16px);
+            }
+        }
+    }
+}
+footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    > h2, p {
+        width: 100%;
+    }
+    > div {
+        padding: 16px;
+        width: calc(50% - 32px);
+        h2, p {
+            margin: 0px;
+            text-align: left;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        > p {
+            text-align: left;
+            font-size: 1rem;
+            padding: 16px;
+        }
+    }
+
+}// end footer

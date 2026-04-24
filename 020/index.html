@@ -19,13 +19,18 @@
 	<header>
         <img src="images/capstonelogo.webp" alt="logo">
 		<span>Fifth Floor Designs</span>
+        <div id="hamburgerBtn">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
 	</header>
 </div><!-- end header wrapper -->
 
     
     
 <div id="navWrapper">
-    <nav>
+    <nav id="primaryNav">
         <ul>
             <li><a href="#">Clients</a></li>
             <li class="active"><a href="#">About</a></li>
@@ -40,11 +45,16 @@
         <h1>About You</h1>
         <p>We Help Show Your Best Stuff!</p>
         <div class="hero">
-            <img src="images/help-branding.webp">
-            <p>Your Award winning website desing and branding partner.</p>
-        </div>
+            <video autoplay muted playsinline loop width="720" height="300">
+                <source src="media/video.mp4">
+            </video>
+            <div>
+                <p>Your Award winning website desing and branding partner.</p>
+                <div></div>
+            </div>
+            </div>
         <h2>How We Can Help</h2>
-        <div card="holder">
+        <div class="card-holder">
             <section>
                 <h3>Design</h3>
                 <img src="images/help-design.webp" alt="design">
@@ -97,6 +107,7 @@
                 <img src="images/client-B.webp" alt="client2">
                 <img src="images/client-C.webp" alt="client3">
                 <img src="images/client-D.webp" alt="client4">
+                <img src="images/client-E.webp" alt="client4">
                 <img src="images/client-F.webp" alt="client5">            
             </div>
         </div>
@@ -107,20 +118,21 @@
     <footer>
         <h2>1-800-555-1257</h2>
         <div>
-            <h3>Fifth Floor Designs</h3>
+            <h2>Fifth Floor Designs</h2>
             <p>900 Spectrum West Dr <br> Suite 903 <br>Irvine, CA 92681</p>
         </div>
         <div>
-            <h3>Fifth Floor Designs</h3>
+            <h2>Fifth Floor Designs</h2>
             <p>29 East Infinity Loop <br> Suite 100  <br>Albany, NY 42158</p>
         </div>
         <div>
-            <h3>Fifth Floor Designs</h3>
+            <h2>Fifth Floor Designs</h2>
             <p>9865 Westminister St<br> Suite 4 <br>Houston, TX 54545</p>
         </div>
         <p> &copy; 2026 &bull; Cohen Van Wagoner</p>
     </footer>
 </div> <!-- end footer wrapper -->
-   
+
+<script src="js/scripts.js"></script>
 </body>
 </html> 
